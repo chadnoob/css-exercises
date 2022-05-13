@@ -9,17 +9,34 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin:10px;
+  
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display:flex;
+  align-items: center;
 }
 
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
+  margin:10px;
   /* this removes the line under the links */
   text-decoration: none;
 }
+div{
+  display:flex;
+  justify-content: space-between;
+}
+body{
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+  align-items: center;
+  justify-content: center;
+}
+
