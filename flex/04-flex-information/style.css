@@ -32,6 +32,7 @@ img {
   justify-content: center;
   background: #eee;
 }
+/*solution*/
 #content{
   display:flex;
   justify-content: center;
