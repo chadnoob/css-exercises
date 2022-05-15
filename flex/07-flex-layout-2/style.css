@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  flex-shrink: 1;
 }
 
 .header {
@@ -12,6 +13,13 @@ body {
   color: white;
   display: flex;
   align-items: center;
+}
+
+/*solution*/
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
 }
 
 .footer {
@@ -26,7 +34,7 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
-
+  flex-shrink: 0;
 }
 
 .card {
@@ -34,30 +42,28 @@ body {
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
   padding: 32px;
-
-  background-color: green;
-
+  width: 200px;
+  margin: 20px;
 }
 
 .content {
   display: flex;
-  background-color: black;
-  
-
+  flex: 1;
 }
 
 .text {
   display: flex;
-  flex-direction: column;
-  background-color: red;
   padding: 32px;
-
-
-
+  flex-wrap: wrap;
 }
 
 ul,
 a {
   list-style: none;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 24px;
+  color: white;
 }
